@@ -1,0 +1,103 @@
+@charset "utf-8";
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+h1 {
+  color: white;
+  font-size: 80px;
+  margin: 0px;
+}
+
+h2 {
+  color: white;
+  font-weight: 100;
+  margin-bottom: 40px;
+}
+
+body {
+  position: relative;
+  font-family: helvetica;
+  text-align: center;
+  /*adding multiple bg images as values*/
+  background-image: linear-gradient(
+                     rgba(20,20,20, .5), 
+                     rgba(20,20,20, .5)),
+                     url(../images/sf.jpg);
+  transition: background-image 3s;
+  background-size: cover;
+}
+
+#hero-container {
+  position:fixed;
+  left:50%;
+  top:50%;
+  transform: translate(-50%, -50%); 
+  -webkit-transform: translate(-50%, -50%); 
+}
+
+/*Disabling user agent styling*/
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    padding: 10px 20px;
+}
+
+/*On focus, get rid of chrome default blue outline*/
+input:focus {
+  outline: 0;
+}
+
+input[type="text"] {
+  padding-right: 40px;
+  background-color: #efefef;
+  margin: 0 auto;
+  font-size: 15px;
+  border-radius: 100px 0px 0px 100px;
+}
+
+input[type="text"]:focus {
+  background-color: #fff;
+}
+
+input[type="submit"] {
+  background-color: #ff5731;
+  color: #fff;
+  margin: 0 auto;
+  font-weight: 600;
+  font-size: 15px;
+  border-radius: 0px 100px 100px 0px;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #ffaa31;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:active {
+  background-color: #ee9911;
+  transition: background-color 0.3s;
+}
+
+
+#system-msg {
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 100;
+  font-size: 13px;
+  font-style: italic;
+  margin-top: 20px;
+}
+
+
